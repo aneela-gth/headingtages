@@ -1,0 +1,114 @@
+Here’s an HTML version of the Telangana State Road Transport Corporation (TGSRTC) General Bus Pass Application form, based on the screenshot you provided:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TGSRTC Bus Pass Application</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h2 {
+      background-color: #dbe8fc;
+      padding: 10px;
+      text-align: center;
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+    label {
+      display: inline-block;
+      width: 150px;
+      margin-top: 8px;
+    }
+    input, select {
+      margin-top: 8px;
+      margin-bottom: 10px;
+      width: 200px;
+    }
+    .captcha {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      background-color: darkred;
+      display: inline-block;
+      padding: 5px 10px;
+      margin-top: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #f66;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h2>TELANGANA STATE ROAD TRANSPORT CORPORATION<br>GENERAL BUS PASS APPLICATION</h2>
+
+<form>
+  <fieldset>
+    <legend><strong>Applicant Details</strong></legend>
+    <label>Name *</label><input type="text" maxlength="20"><br>
+    <label>Father's / Guardian's Name *</label><input type="text"><br>
+    <label>Date of Birth *</label><input type="date"><br>
+    <label>Gender *</label>
+    <input type="radio" name="gender"> Female
+    <input type="radio" name="gender"> Male<br>
+    <label>Age As on</label>
+    <input type="number" placeholder="Years" style="width: 50px;"> 
+    <input type="number" placeholder="Months" style="width: 50px;">
+    <input type="number" placeholder="Days" style="width: 50px;"><br>
+    <label>Aadhaar No</label><input type="text"><br>
+    <label>WhatsApp No</label><input type="text"><br>
+    <label>Email ID</label><input type="email"><br>
+    <label>Photo</label><input type="file"><br>
+  </fieldset>
+
+  <fieldset>
+    <legend><strong>Residential Address Details</strong></legend>
+    <label>Applicant's Address *</label><input type="text" maxlength="20"><br>
+    <label>District *</label>
+    <select><option>HYDERABAD</option></select><br>
+    <label>Mandal *</label>
+    <select><option>HYDERABAD</option></select><br>
+    <label>Village *</label>
+    <select><option>HYDERABAD</option></select><br>
+    <label>Pincode *</label><input type="text"><br>
+  </fieldset>
+
+  <fieldset>
+    <legend><strong>Pass Type Details</strong></legend>
+    <label>City *</label>
+    <select><option>Hyderabad</option></select><br>
+    <label>Pass Type *</label>
+    <select>
+      <option>--Select--</option>
+      <!-- Add options dynamically -->
+    </select><br>
+  </fieldset>
+
+  <fieldset>
+    <legend><strong>Mode of Payment & Pass Collection</strong></legend>
+    <label>Payment Mode *</label>
+    <select><option>Select Payment Mode</option></select><br>
+    <label>Pass Delivery Mode *</label>
+    <select><option>Select Pass Delivery Mode</option></select><br>
+    <label>Collection Center *</label>
+    <select><option>--Select--</option></select><br>
+  </fieldset>
+
+  <div class="captcha">ktf9BA</div><br>
+  <input type="text" placeholder="Enter CAPTCHA"><br><br>
+
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
