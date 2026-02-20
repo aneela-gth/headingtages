@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+             font-family: Arial, sans-serif;
+             background: #f7f7f7;
+             margin: 0;
+             padding: 20px;
+        }
+        .containear{
+             background: #fff;
+             width: 800px;
+             margin: 0 auto;
+             border: 2px solid #000;
+             padding: 20px 40px;
+        }
+        img{
+             display: block;
+        margin: 0 auto 10px auto;
+        text-align: center;
+        width: 40px;
+        height: auto;
+           
+        }
+         h2 {
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 5px;
+        }
+      h3 {
+          font-size: 13px;
+          text-align: center;
+          color: #d00;
+           margin-top: 0;
+       }
+       h4 {
+          font-size: 13px;
+          text-align: center;
+          color: rgb(11, 100, 23);
+           margin-top: 0;
+       }
+       label{
+        font-size: larger;
+       }
+    .section {
+        margin-bottom: 15px;
+        border: 1px solid #000;
+        padding: 10px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+    td {
+        border: 1px solid #000;
+        padding: 6px;
+        vertical-align: top;
+    }
+    .footer {
+        text-align: center;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    .signature {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        color: rgb(23, 22, 22);
+    }
+    
+
+    /* Mobile Devices (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+    .containear {
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto 10px auto;
+        text-align: center;
+        width: 40px;
+        height: auto;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3, h4 {
+        font-size: 12px;
+    }
+
+    .section {
+        padding: 8px;
+    }
+
+    table, td {
+        font-size: 12px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="date"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .signature {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Tablet Devices (max-width: 900px) */
+@media only screen and (max-width: 900px) {
+    .containear {
+        width: 90%;
+        padding: 15px 20px;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto 15px auto;
+        width: 45px;
+        height: auto;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3, h4 {
+        font-size: 13px;
+    }
+
+    .section {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="date"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .signature {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="containear">
+       <img src="./vector-illustration-of-national-symbols-of-india-with-indian-flag-2CAC3C7.jpg" width="50px" center>
+       <h2>AADHAAR DATA UPDATE FROM</h2>
+       <h3>select only those fields which you would like to update ,fields markes* are mandatory.</h3>
+       <h4>please follow the instructions overleaf while filling up the form.use capital letters only</h4>
+    <div class="section">
+        <label>Update Type *</label><br>
+        <input type="checkbox"> Demographic Update (Name/Gender/Age/DOB/Address/Email/Mobile/Relationship/Consent)<br>
+        <input type="checkbox"> Biometric Update (Photo/Fingerprint/Iris)
+    </div>
+    <div class="section">
+        <label>Aadhaar No. *</label><br>
+        <input type="text" placeholder="Enter 12-digit Aadhaar number">
+    </div>
+
+    <div class="section">
+        <label>Full Name *</label><br>
+        <input type="text" placeholder="Enter Full Name">
+    </div>
+
+    <div class="section">
+        <label>Gender *</label><br>
+        <div class="radio-group">
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Transgender
+        </div>
+        <br>
+        <label>Age:</label>
+        <input type="number" style="width: 70px;"> 
+        <label>Date of Birth:</label>
+        <input type="date">
+    </div>
+
+    <div class="section">
+        <label>Address</label>
+        <table>
+            <tr><td>C/O</td><td><input type="text"></td></tr>
+            <tr><td>House No./Bldg/Apt</td><td><input type="text"></td></tr>
+            <tr><td>Street/Road/Lane</td><td><input type="text"></td></tr>
+            <tr><td>Landmark</td><td><input type="text"></td></tr>
+            <tr><td>Area/Locality/Sector</td><td><input type="text"></td></tr>
+            <tr><td>Village/Town/City</td><td><input type="text"></td></tr>
+            <tr><td>District</td><td><input type="text"></td></tr>
+            <tr><td>Sub-District</td><td><input type="text"></td></tr>
+            <tr><td>State</td><td><input type="text"></td></tr>
+            <tr><td>PIN Code</td><td><input type="text"></td></tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <label>Email:</label><br>
+        <input type="email"><br><br>
+        <label>Mobile No:</label><br>
+        <input type="text">
+    </div>
+
+    <div class="section">
+        <label>*Relationship Details of:</label><br>
+        <div class="radio-group">
+            <input type="radio" name="rel"> Father
+            <input type="radio" name="rel"> Mother
+            <input type="radio" name="rel"> Guardian
+            <input type="radio" name="rel"> Husband
+            <input type="radio" name="rel"> Wife
+        </div>
+        <br>
+        <label>Name:</label>
+        <input type="text" placeholder="Enter name"><br><br>
+        <label>Aadhaar No. / EID No.:</label>
+        <input type="text">
+    </div>
+
+    <div class="section">
+        <label>Verification Type:</label><br>
+        <input type="radio" name="verify"> Document Based
+        <input type="radio" name="verify"> Introducer Based
+        <input type="radio" name="verify"> Head of Family
+        <br><br>
+        <label>Documents Provided:</label>
+        <table>
+            <tr><td>a. POI</td><td><input type="text"></td></tr>
+            <tr><td>b. POA</td><td><input type="text"></td></tr>
+            <tr><td>c. DOB</td><td><input type="text"></td></tr>
+            <tr><td>d. POR</td><td><input type="text"></td></tr>
+        </table>
+    </div>
+
+    <div class="signature">
+        <div>
+            <label>Applicant's Signature/Thumbprint</label><br><br>
+            _______________________________
+        </div>
+        <div>
+            <label>Verifier’s Stamp and Signature</label><br><br>
+            _______________________________
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>To be filled by the Enrolment/Update Agency only<br>
+        Date & Time of Update Request: ____________________</p>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

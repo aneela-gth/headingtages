@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     :root{
+  --maroon: #424040;
+  --soft-border: #d4f6f1;
+  background-image: linear-gradient(rgb(177, 216, 240),rgb(192, 244, 235),rgb(151, 151, 170));
+  --text: #222;
+  --muted: #555;
+  --max-width: 900px;
+  
+} 
+
+*{box-sizing: border-box;}
+body{
+  font-family: "Georgia", "Times New Roman", serif;
+  background:#cfcfe0;
+  margin:0;
+  padding:32px;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  color:var(--text);
+}
+
+.certificate{
+  /* width:50%; */
+  max-width:var(--max-width);
+  display: flex;
+  background-image: linear-gradient(rgb(169, 191, 213),rgb(141, 141, 223)); 
+}
+
+.border{
+  background:var(--paper);
+  border:10px solid var(--maroon);
+  padding:22px;
+  box-shadow:0 8px 22px rgba(0,0,0,0.12);
+  
+}
+
+.cert-header .top-lines{
+  text-align:center;
+  margin-bottom:6px;
+}
+
+.cert-header h2{
+  margin:0;
+  color:var(--maroon);
+  font-size:20px;
+  letter-spacing:0.6px;
+  
+}
+
+.cert-header h3{
+  margin:2px 0 8px;
+  font-size:14px;
+  color:var(--muted);
+}
+
+
+.logo-circle{
+  width:82px;
+  height:82px;
+  border-radius:50%;
+  display:inline-grid;
+  justify-items: center;
+  
+}
+
+.title{
+  flex:1;
+  text-align:center;
+}
+
+.title h1{
+  margin:6px 0 4px;
+  font-size:20px;
+  letter-spacing:1px;
+}
+
+.title .sub{
+  margin:0;
+  font-size:13px;
+  color:var(--muted);
+}
+
+.meta{
+  width:170px;
+  text-align:right;
+  font-size:13px;
+  color:var(--muted);
+}
+
+.cert-body{
+  display:flex;
+  gap:22px;
+  margin-top:18px;
+  align-items:flex-start;
+  flex-wrap:wrap;
+}
+
+.left-col{
+  width:280px;
+  min-width:220px;
+}
+
+.student-photo{
+  width: 100px;
+  height:120px;
+  margin-left: 50px;
+  top:85px ;
+  right: 500px;
+  border:2px solid var(--soft-border);
+  position: absolute;
+
+}
+
+.student-photo img{
+  width:100%;
+  height:100%;
+}
+.qr{
+   width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 500px; 
+    top: 95px;
+}
+
+.info-table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:14px;
+}
+
+.info-table td{
+  padding:8px 6px;
+  border-bottom:1px dashed #e6dada;
+}
+
+.info-table td:first-child{
+  color:var(--muted);
+  width:40%;
+}
+
+.right-col{
+  flex:1;
+  min-width:300px;
+}
+
+.section-title{
+  margin:0 0 8px;
+  font-size:16px;
+}
+
+.section-title.small{ margin-top:16px; font-size:14px; }
+
+.grades-table, .co-table{
+  width:100%;
+  border-collapse:collapse;
+  margin-bottom:12px;
+}
+
+.grades-table th, .grades-table td,
+.co-table td{
+  border:2px solid #bfbfbf;
+  padding:8px;
+  text-align:center;
+  font-size:14px;
+}
+
+.grades-table thead th{
+  background:#f7dede;
+}
+
+.grades-table tfoot td{
+  padding:10px;
+  font-weight:700;
+  text-align:center;
+}
+
+.cert-footer{
+  display:flex;
+  justify-content:space-between;
+  margin-top:18px;
+  gap:12px;
+  border-top:6px solid var(--soft-border);
+  padding-top:10px;
+  align-items:flex-end;
+}
+span {
+    color: #c24b4b;
+}
+
+
+/* ------------------- TABLET (width ≤ 900px) ------------------- */
+@media only screen and (max-width: 900px) {
+  body {
+    padding: 16px;
+  }
+
+  .certificate {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .border {
+    padding: 16px;
+  }
+
+  .cert-header h2 {
+    font-size: 18px;
+  }
+
+  .cert-header h3 {
+    font-size: 13px;
+  }
+
+  .logo-circle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .info-table td {
+    font-size: 13px;
+    padding: 6px;
+  }
+
+  .grades-table th,
+  .grades-table td {
+    font-size: 13px;
+    padding: 6px;
+  }
+
+  .qr {
+    position: static;
+    margin: 12px auto;
+    display: block;
+  }
+
+  .student-photo {
+    position: static;
+    margin: 10px auto;
+    display: block;
+  }
+
+  .cert-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .right-foot, .left-foot {
+    text-align: center;
+  }
+}
+
+/* ------------------- MOBILE (width ≤ 600px) ------------------- */
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .certificate {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .border {
+    border-width: 6px;
+    padding: 12px;
+  }
+
+  .cert-header h2 {
+    font-size: 16px;
+  }
+
+  .cert-header h3 {
+    font-size: 12px;
+  }
+
+  .logo-circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .student-photo {
+    width: 80px;
+    height: 100px;
+    position: static;
+    margin: 10px auto;
+    display: block;
+  }
+
+  .qr {
+    width: 80px;
+    height: 80px;
+    position: static;
+    margin: 10px auto;
+    display: block;
+  }
+
+  .info-table td {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .grades-table th,
+  .grades-table td {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .co-table td {
+    font-size: 12px;
+  }
+
+  .cert-footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .left-foot h3,
+  .right-foot h3 {
+    font-size: 13px;
+  }
+
+  h1, h2, h3 {
+    text-align: center;
+  }
+}
+
+
+</style>
+</head>
+<body>
+   <div class="certificate">
+    <div class="border">
+      <header class="cert-header">
+        <div class="top-lines">
+          <h2>Board of Secondary Education</h2>
+          <h3>TELANGANA STATE, INDIA</h3>
+          <div class="logo-circle">
+            <img src="https://www.bima.ap.gov.in/img/Andhra-Pradesh-AP-Govt-Logo.png" width="80px;">
+          </div>
+          <h2>SECONDARY SCHOOL CERTIFICATE</h2>
+            <p><span>REGULAR</span> :pc/31/44377/0418090/3</p>
+            <div class="student-photo">
+              <img src="Screenshot 2025-10-07 105533.png" alt="Student photo" /> 
+            </div>
+            <div class="qr">
+                <img src="image.png" width="100px">
+            </div>
+        </div>
+          <table class="info-table">
+            <body>
+              <tr><td>Certified That</td><td><strong>BANDI ANEELA</strong></td></tr>
+              <tr><td>Father's Name</td><td>BANDI THIRAPAIAH</td></tr>
+              <tr><td>Mother's Name</td><td>BANDI USHARANI</td></tr>
+              <tr><td>Roll No.</td><td>1831117697</td></tr>
+               <tr><td>Date of Birth</td><td>22/12/2002(TWO TWO DECEMBER TWO ZERO ZERO TWO)</td></tr>
+              <tr><td>School</td><td>Z.P.H SCHOOL, REBBAVARAM,KHAMMAM</td></tr>
+              <tr><td>medium</td><td>TELUGU</td></tr>
+              <tr><td>Exam Appeared</td><td>March 2018</td></tr><hr>
+             
+            </body>
+          </table>
+        </section>
+                <section class="right-col">
+          <h2 class="section-title">GRADES</h2>
+
+          <table class="grades-table">
+            <thead>
+              <tr>
+                <th>Subject</th>
+                <th>Grade FA</th>
+                 <th>Grade SA</th>
+                 <th>overallgrade</th>
+                <th>gradePoints</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Telugu</td><td>A1</td><td>B1</td><TD>B1</TD><td>08</td></tr>
+              <tr><td>Hindi</td><td>B2</td><td>C1</td><td>C1</td><td>06</td></tr>
+              <tr><td>English</td><td>A1</td><td>B2</td><td>B1</td><td>08</td></tr>
+              <tr><td>Mathematics</td><td>A1</td><td>C1</td>B2<td>B2</td><td>07</td></tr>
+              <tr><td>General Science</td><td>A1</td><td>B1</td><td>B1</td><td>08</td></tr>
+              <tr><td>Social Studies</td><td>A1</td><td>C1</td><td>B2</td><td>07</td></tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2"><strong>GPA (Aggregate)</strong>:
+                <td colspan="3"><strong>9.0</strong></td>
+              </tr>
+            </tfoot>
+          </table>
+          <h3 class="section-title small">Co-curricular</h3>
+          <table class="co-table">
+            <tbody>
+                <head>
+                 <tr>
+                    <th>SUBJECT</th>
+                    <th>GRADES</th>
+                     <th>SUBJECT</th>
+                     <th>GRADE</th>
+                  </tr>
+                </head>
+        
+              <tr colspan="2"><td>Work & Computer Education</td><td>A+</td><td>work&computer education</td><td>A+</td></tr>
+              <tr><td>Health & Physical Education</td><td>A+</td><td>physical&health education<td>A+</td></tr>
+            </tbody>
+          </table>
+          
+           <h2> markes of identification:</h2><p>1.A MOLE ON THE LEFT THUMB</p><P>2.A MOLE ON THE LEFT EAR</P>
+          
+        </section>
+      </main>
+      <footer class="cert-footer">
+        <div class="left-foot">
+            <h3>date of issue:27/04/2018</h3>
+        </div>
+        <div class="right-foot">
+          <h3>Secretary, Board of Secondary Education</h3>
+          <p class="signature">_______________________</p>
+          
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+    
+</body>
+</html>
