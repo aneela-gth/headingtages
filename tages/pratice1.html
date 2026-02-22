@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,24 +7,25 @@
     <style>
         table,th,td{
             background-color: rgb(240, 249, 187);
-            border-radius: 5px;
+        
         }
     </style>
 </head>
 <body>
-    <table border="1px" cellspacing="0"  cellpading="40">
+    <h1>table</h1>
+    <table border="1px" cellspacing="0"  cellpading="10">
         <tr>
             <th>name</th>
             <th>age</th>
             <th>cource</th>
-            <th>city</th>   
+            <th colspan="2">city</th>   
         </tr>
         <tr>
-            <td>aneela</td>
+            <td colspan="2">aneela</td>
             <td>21</td>
             <td>pyhton</td>
-            <td>hyd</td>
-        </tr>
+             <td>hyd</td>
+         </tr>
         <tr>
             <td>aneela</td>
             <td>21</td>
@@ -39,9 +40,10 @@
         </tr>
         <tr>
             <td>ram</td>
-            <td cellpading="3">12</td>
+            <td colspan="3">12</td>
         </tr>
     </table><br><br><hr>
+    <h1>from</h1>
     <from>
         <lable>name:</lable>
         <input text=""><br><br>
@@ -57,7 +59,21 @@
         <lable>mail</lable>
         <input type="radio">
         <lable>femail</lable>
-        <input type="radio">
+        <input type="radio"><hr>
+        <h1> form validaction</h1>
+  Name: <input type="text" required><br><br>
+
+  Email: <input type="email" required><br><br>
+
+  Age: <input type="number" min="18" max="60"><br><br>
+
+  Password: <input type="password" minlength="6" required><br><br>
+
+  <button type="submit">Submit</button>
+
     </from>
+
 </body>
-</html>
+</html> 
+
+
